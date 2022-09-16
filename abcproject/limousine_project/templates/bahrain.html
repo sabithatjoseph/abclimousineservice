@@ -1,0 +1,78 @@
+{% extends 'base.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+{% block content %}
+<body>
+
+  <div class="container p-0 px-lg-2 py-2">
+    <img src="{% static 'img/car-rental.jpg' %}" alt="" class="w-100 col-lg-12">
+    <h1 class="text-danger text-center py-2" style="font-family:Georgia">Bahrain ABC Limousine Rates</h1>
+
+  <h2 style="font-family:Courier New">Transfer Rates within Bahrain</h2>
+  <p class="py-2 text-dark">Enjoy your journey.</p>
+    <br>
+  <table class="table">
+    <thead>
+      <tr>
+        <th class="bg-dark">Transfer Rates within Bahrain <br> Transfer from/to the Airport to/from Zone 1</th>
+        <th class="bg-dark">Transfer Rates within Bahrain <br> Transfer from/to the Airport to/from Zone 2</th>
+        <th class="bg-dark">Transfer Rates within Bahrain <br> Transfer from/to the Airport to/from Zone 3</th>
+      </tr>
+    </thead>
+    <tbody class="bg-secondary">
+      <tr>
+        <td style="font-size:20px;font-family:Georgia">Executive Sedan</td>
+        <td style="font-size:20px;font-family:Georgia"> Executive Sedan </td>
+        <td style="font-size:20px;font-family:Georgia"> Executive Sedan </td>
+      </tr>
+      <tr>
+        <td class="text-dark" style="font-size:25px;font-family:Verdana">28.00 BD</td>
+        <td class="text-dark" style="font-size:25px;font-family:Verdana">32.00 BD</td>
+        <td class="text-dark" style="font-size:25px;font-family:Verdana">40.00 BD</td>
+       </tr>
+
+
+      <tr>
+        <td style="font-size:20px;font-family:Georgia">SUV</td>
+        <td style="font-size:20px;font-family:Georgia"> SUV</td>
+        <td style="font-size:20px;font-family:Georgia">SUV</td>
+      </tr>
+      <tr>
+        <td class="text-dark" style="font-size:25px;font-family:Verdana">17.00 BD</td>
+        <td class="text-dark" style="font-size:25px;font-family:Verdana">20.00 BD</td>
+        <td class="text-dark" style="font-size:25px;font-family:Verdana">25.00 BD</td>
+       </tr>
+
+
+      <tr>
+        <td style="font-size:20px;font-family:Georgia">Standard Sedan</td>
+        <td style="font-size:20px;font-family:Georgia">Standard Sedan</td>
+        <td style="font-size:20px;font-family:Georgia">Standard Sedan</td>
+      </tr>
+      <tr>
+        <td class="text-dark" style="font-size:25px;font-family:Verdana">15.00 BD</td>
+        <td class="text-dark" style="font-size:25px;font-family:Verdana">17.00 BD</td>
+        <td class="text-dark" style="font-size:25px;font-family:Verdana">20.00 BD</td>
+       </tr>
+
+
+
+      <tr>
+        <td style="font-size:20px;font-family:Garamond;color:purple">Covers Manama, Diplomatic Area, Muharraq,<br> Busiateen, Hidd, Galali, Diyar Al Muharraq, Amwaj</td>
+        <td style="font-size:20px;font-family:Garamond;color:purple">Covers Sitra, Isa Town, Sanad,<br> Aali, Riffa, Janabiya</td>
+        <td style="font-size:20px;font-family:Garamond;color:purple">Covers Hamad Town, Zallaq, BIC,<br> King Fahad Causeway, Durrat Al Bahrain</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+
+</body>
+{% endblock %}
+</html>

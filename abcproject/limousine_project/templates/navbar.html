@@ -1,0 +1,94 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+ <!-- Topbar Start -->
+
+
+
+<!--    <div class="container expand-lg">-->
+<!--    <div class="container navbar-expand-xl bg-dark py-3 px-lg-8 col-lg-12 d-none d-lg-block">-->
+        <div class="row bg-white">
+
+            <div class=" col-md-6 px-3 bg-white text-center  py-2  text-lg-left mb-2 mb-lg-0">
+                <div class="bg-white d-inline-flex align-items-center">
+                    <a class="text-body  pr-3" href=""><i class="fa fa-phone-alt text-danger mr-2"></i>+973 3639 4638</a>
+                    <span class="text-body">|</span>
+                    <a class="text-body px-3" href=""><i class="fa fa-envelope text-danger mr-2"></i>info@abclimousinebh.com</a>
+                </div>
+            </div>
+            <div class="col-md-6 text-center text-lg-right py-2 ">
+                <div class="d-inline-flex align-items-center">
+                    <a class="text-body px-3" href="">
+                        <i class="fab fa-facebook-f text-danger"></i>
+                    </a>
+                    <a class="text-body px-3" href="">
+                        <i class="fab fa-twitter text-danger"></i>
+                    </a>
+                    <a class="text-body px-3" href="">
+                        <i class="fab fa-linkedin-in text-danger"></i>
+                    </a>
+                    <a class="text-body px-3" href="">
+                        <i class="fab fa-instagram text-danger"></i>
+                    </a>
+                    <a class="text-body pl-3" href="">
+                        <i class="fab fa-youtube text-danger"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid position-relative  nav-bar px-2 navbar-expand-lg w-100 bg-dark p-0">
+
+         <div class="position-relative" style="z-index: 9;">
+             <img class="d-block mx-auto mb-2 " style="width:70px; height:70px;" src="{% static 'img/ABC-logo-1.jpg' %}" alt="Image">
+            <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 py-lg-0 pl-3 pl-lg-5">
+                <a href="" class="navbar-brand">
+
+                 <h1 class="text-uppercase text-warning  mb-2" style="font-family:Times New Roman">ABC LIMOUSINE SERVICES</h1> </a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between px-3 " id="navbarCollapse">
+                    <div class="navbar-nav ml-auto py-0">
+                        <a href="{% url 'limousineapp:index' %}" class="nav-item nav-link active ">HOME</a>
+                        <a href="{% url 'limousineapp:about' %}" class="nav-item nav-link">ABOUT US</a>
+                        <a href="{% url 'limousineapp:gallery' %}" class="nav-item nav-link">GALLERY</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">RATES</a>
+                            <div class="dropdown-menu rounded-0 m-0">
+                                <a href="{% url 'limousineapp:bahrain' %}" class="dropdown-item">BAHRAIN</a>
+                                <a href="{% url 'limousineapp:saudi' %}" class="dropdown-item">SAUDI</a>
+
+                            </div>
+                        </div>
+<!--                        <div class="nav-item dropdown">-->
+<!--                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>-->
+<!--                            <div class="dropdown-menu rounded-0 m-0">-->
+<!--                                <a href="team.html" class="dropdown-item">The Team</a>-->
+<!--                                <a href="testimonial.html" class="dropdown-item">Testimonial</a>-->
+<!--                            </div>-->
+<!--                        </div>-->
+                        <a href="{% url 'limousineapp:reviews' %}" class="nav-item nav-link">REVIEWS</a>
+                        <a href="{% url 'limousineapp:contact' %}" class="nav-item nav-link">CONTACT</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Navbar End -->
+        </div>
+</div>
+
+</body>
+</html>

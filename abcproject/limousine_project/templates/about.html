@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+{% block title %}
+    <title>About us</title>
+{% endblock %}
+</head>
+{% block content %}
+<body>
+<div class="row">
+    <div class="container-fluid">
+
+    <img class="card-img-top" src="{% static 'img/car-3.jpg' %}" alt="Card image cap">
+    <div class="card-body">
+    <h1 class="card-title text-center text-uppercase" style="font-family:Times New Roman"> ABC Limousine Services</h1>
+
+    <h3 class="text-center text-danger" style="font-family:Papyrus">Safe, Reliable and Chauffeur-Driven Premium Car Rental Specialist in Bahrain.</h3>
+    <hr>
+    <h2 class="text-warning" style="text-decoration:underline; font-family:Georgia" >About Us </h2>
+    <p class="text-justify font-weight-light" style="font-family:Garamond" >Searching for nearby limo taxi service? ABC, being one of the best chauffeur service providers in Bahrain, now provides you with chances to travel inside and outside Bahrain at cheapest trip rates. Our luxurious fleet includes GMC YUKON, CHEVROLET TAHOE SUV, NISSAN PATROL SUV and HYUNDAI ACCENT to ensure comfort of our clients. We not only provide our services in Bahrain, but also provide airport transport services,for travelling to and from Saudi Arabia, Al-Khober, Dammam, Riyadh, Jubail City and Ras Tanoura.</p>
+
+      <br>
+        <div class="container">
+            <ul class="list-group md-2 list-group-flush">
+              <h1 class="text-center">Why Choose ABC?</h1>
+
+<!--       <div class="card-center col-md-4 mb-4">-->
+             <img  src="{% static 'img/car-4.png' %}" alt="Card image cap">
+<!--       </div>-->
+
+             <ul class="bg-secondary" style="font-family:Open Sans">
+               <li >Qualified & professional drivers</li>
+               <li  >Any destination in Bahrain and KSA</li >
+               <li  >Daily, Weekly, Monthly Rentals</li>
+               <li  >Easy and fast booking</li>
+               <li  >Well maintained vehicles</li>
+               <li  >Transparent pricing list</li>
+               <li  >Free Wifi service in all the cabs</li>
+               <li  >No extra toll charges</li>
+               <li  >No wait time charges for long hours</li>
+               <li  >Baby seat available upon request</li>
+               <li  >Airport Transfers</li>
+               <li  >International Reservations</li>
+               <li  >Special corporate packages also available</li>
+
+
+
+       </ul> <br>
+
+
+            <h1 class="text-center text-primary">OUR QUALIFIED CHAUFFEURS</h1>
+                <img class="card-img" style="width:100%" src="{% static 'img/car-7.jpg' %}" alt="Card image cap">
+                <p class="mb-4 py-2 " style="font-family:Roboto">Being one of the best chauffeur service providers in Bahrain, we ensure our chauffeurs to be well trained professionals and experienced in providing services that meet the standards-reliability, expertise and professionalism. Each certified chauffeur has the knowledge, skills, safety training, and flexibility which guarantee your needs and expectations.</p>
+                <a href="{% url 'limousineapp:contact' %}" class="btn btn-info btn-sm col-lg-2"  role="button"  aria-pressed="true">Book Now</a>
+
+          </div>
+
+     </div>
+
+ </div>
+
+</body>
+{% endblock %}
+</html>

@@ -1,0 +1,101 @@
+{% extends 'base.html' %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+{% block title %}
+    <title>Our Cars</title>
+{% endblock %}
+</head>
+{% block content %}
+<body>
+<div class="container-fluid py-5">
+        <div class="container pt-5 pb-3">
+<!--            <h1 class="display-1 text-primary text-uppercase text-center">Find</h1>-->
+            <h1 class="display-4 text-uppercase text-center mb-5" style="font-family:cursive">Looking for a Car?</h1>
+
+                <div class="row ">
+
+
+                        <div class=" col-lg-4 col-md-4 mb-3  ">
+                            <div class="rent-item mb-4 card h-100 w-10  bg-secondary">
+
+                            <img class="card-img-top card-body img-fluid mb-4 " src="{% static 'img/car-car-1.jpg' %}" alt="">
+                            <h4 class="card-title text-uppercase text-dark text-center px-2 mb-4">Chevrolet</h4>
+<!--                        <div class="d-flex justify-content-center mb-4">-->
+<!--                            <div class="px-2">-->
+<!--                                <i class="fa fa-car text-primary mr-1"></i>-->
+<!--                                <span>2015</span>-->
+<!--                            </div>-->
+<!--                            <div class="px-2 border-left border-right">-->
+<!--                                <i class="fa fa-cogs text-primary mr-1"></i>-->
+<!--                                <span>AUTO</span>-->
+<!--                            </div>-->
+<!--                            <div class="px-2">-->
+<!--                                <i class="fa fa-road text-primary mr-1"></i>-->
+<!--                                <span>25K</span>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <a class="btn btn-primary px-2 mb-4" href="">{{i.rateperhour}} BD/Hour</a>-->
+
+<!--                        <h6 class="mb-4 px-2 text-dark text-center">{{i.desc}}</h6>-->
+                      </div>
+                   </div>
+                            <div class=" col-lg-4 col-md-4 mb-3  ">
+                            <div class="rent-item mb-4 card h-100 w-10  bg-secondary">
+
+                            <img class="card-img-top card-body img-fluid mb-4 " src="{% static 'img/car4.png' %}" alt="">
+                            <h4 class="card-title text-uppercase text-dark text-center px-2 mb-4">Land Cruiser</h4>
+
+                            </div>
+                           </div>
+
+                     <div class=" col-lg-4 col-md-4 mb-3  ">
+                            <div class="rent-item mb-4 card h-100 w-10  bg-secondary">
+
+                            <img class="card-img-top card-body img-fluid mb-4 " src="{% static 'img/car5.jpg' %}" alt="">
+                            <h4 class="card-title text-uppercase text-dark text-center px-2 mb-4">Tahoe</h4>
+
+                            </div>
+                           </div>
+
+                    <div class=" col-lg-4 col-md-4 mb-3  ">
+                            <div class="rent-item mb-4 card h-100 w-10  bg-secondary">
+
+                            <img class="card-img-top card-body img-fluid mb-4 " src="{% static 'img/car6.png' %}" alt="">
+                            <h4 class="card-title text-uppercase text-dark text-center px-2 mb-4">yukonxl gmc </h4>
+
+                            </div>
+                           </div>
+
+                    <div class=" col-lg-4 col-md-4 mb-3  ">
+                            <div class="rent-item mb-4 card h-100 w-10  bg-secondary">
+
+                            <img class="card-img-top card-body img-fluid mb-4 " src="{% static 'img/car-car-2.jpg' %}" alt="">
+                            <h4 class="card-title text-uppercase text-dark text-center px-2 mb-4">tahoe-gaz</h4>
+
+                            </div>
+                           </div>
+
+                    <div class=" col-lg-4 col-md-4 mb-3  ">
+                            <div class="rent-item mb-4 card h-100 w-10  bg-secondary">
+
+                            <img class="card-img-top card-body img-fluid mb-4 " src="{% static 'img/car-car-3.jpeg' %}" alt="">
+                            <h4 class="card-title text-uppercase text-dark text-center px-2 mb-4">gh-12</h4>
+
+                            </div>
+                           </div>
+
+
+
+
+
+
+    </div>
+
+</div>
+</body>
+{% endblock %}
+</html>
